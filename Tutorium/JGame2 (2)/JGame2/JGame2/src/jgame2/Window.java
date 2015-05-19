@@ -1,5 +1,6 @@
 package jgame2;
 
+import Aufgabe1b.Physics.ParticleInterface;
 import java.awt.event.KeyEvent;
 import java.util.logging.Level;
 import java.util.logging.Logger;

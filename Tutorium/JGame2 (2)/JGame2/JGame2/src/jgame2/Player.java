@@ -6,6 +6,7 @@
 
 package jgame2;
 
+import Aufgabe1b.Physics.ParticleInterface;
 import jgame.JGObject;
 import jgame.platform.JGEngine;
 
