@@ -40,7 +40,7 @@ public interface ParticleInterface {
     
     double getPaintDirection();
 
-    void set(double aTime, double aPosX, double aPosY, double aSpeed, double aPropLevel);
+    void set(double aTime, double aPosX, double aPosY, double aSpeed, double aPropLevel, Enum state);
 
     void setAbsOn(boolean aAbsOn);
 

@@ -61,7 +61,7 @@ public class GControl{
 
     public void step(){
         if (!isCreatedCar() && getEngine().getKey(KeyEvent.VK_N)){
-            GObject.newGObject(Particle.newParticle(1445.0,330/3.6,456000.0,20.0));
+            GObject.newGObject(Particle.newParticle(1445.0,456000.0,330/3.6,20.0));
             setCreatedCar(true);
         }else if (!getEngine().getKey(KeyEvent.VK_N)){
             setCreatedCar(false);

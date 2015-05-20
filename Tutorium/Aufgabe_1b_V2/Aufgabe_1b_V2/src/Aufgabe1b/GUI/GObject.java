@@ -134,7 +134,8 @@ public class GObject extends JGObject{
     @Override
     public void move() {
         if (isCreated()){
-            getParticle().step(getGEngine().getDeltaTime());
+            getParticle().step(0.1);
+            //getParticle().step(getGEngine().getDeltaTime());
             this.x = getParticle().getPosX();
             this.y = getParticle().getPosY();
             setGraphic("Player" + MyUtils.MyMod((((int) ((getParticle().getPaintDirection()*(180/Math.PI)))) + 90), 360));
@@ -147,7 +148,8 @@ public class GObject extends JGObject{
                 getSteering().step(getGEngine().getDeltaTime());
                 getBreak().step(getGEngine().getDeltaTime());
                 if (!getParticle().isStartedUncontroled()){
-                    getParticle().setPropLevel(getPower().getLevel());
+                    getParticle().setPropLevel(1.0);
+                    //getParticle().setPropLevel(getPower().getLevel());
                     getParticle().setSteeringLevel(getSteering().getLevel());
                     getParticle().setBreakLevel(getBreak().getLevel());
                 }

@@ -134,7 +134,7 @@ public class GObject extends JGObject{
     @Override
     public void move() {
         if (isCreated()){
-
+            //getParticle().step(0.1);
             getParticle().step(getGEngine().getDeltaTime());
             this.x = getParticle().getPosX();
             this.y = getParticle().getPosY();
@@ -148,6 +148,7 @@ public class GObject extends JGObject{
                 getSteering().step(getGEngine().getDeltaTime());
                 getBreak().step(getGEngine().getDeltaTime());
                 if (!getParticle().isStartedUncontroled()){
+                    //getParticle().setPropLevel(45.0);
                     getParticle().setPropLevel(getPower().getLevel());
                     getParticle().setSteeringLevel(getSteering().getLevel());
                     getParticle().setBreakLevel(getBreak().getLevel());
